@@ -72,7 +72,7 @@ a {
 }
 
 h1 {
-	font-size:  90px;
+	font-size:  60px;
 	letter-spacing: .05em;
 	font-weight: bold;
 	
@@ -93,11 +93,16 @@ button {
 	color: #000000;
 	font-family: 'titillium web', sans-serif;
 	border: 1px solid #000000;
-	letter-spacing: 0.1em;
-	font-size: 25px;
+    letter-spacing: 0.1em;
+    width: 150px;
+    font-size: 15px;
+    
+    
 }
 
-
+button, a{
+  color:black;
+}
 
 body {
 	width: 90%;
@@ -129,17 +134,26 @@ header {
     margin-bottom: 30px;
 }
 .nav-bar a {
-	padding: 20px;
+    padding: 20px;
+    padding-top: 50px;
 	color: lightgrey;
 	
 }
 
+
+.container-1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .content-text-1 {
-    display: inline-block;
-    vertical-align: top;
-    margin: 1%;
+    margin-top: 10%;
 	text-align: center;
 	font-family: 'Bangers', cursive;
+}
+
+.logo {
+    padding-bottom: 10px;
 }
 
 .content-text-2 {
@@ -162,31 +176,6 @@ header {
 	display: inline-block;
     
     
-}
-
-.container-1 {
-	padding-bottom: 80px;
-	text-align: center;
-	
-}
-
-
-.container-2 {
-	font-size: 18px;
-	border: 1px solid black;
-	width: 25%;
-	text-align: center;
-	margin: 2%;
-	padding: 1%;
-	justify-content: center;
-}
-
-.container-2 a {
-	width: 100%;
-	margin: 2%;
-	padding: 2%;
-	
-
 }
 
 .features-1 {
@@ -254,3 +243,49 @@ footer {
 	margin-bottom: 5%;
 }
 /* Your code starts here! */
+@media(max-width: 768px) {
+    .container {
+        width: 768px;
+    }
+
+
+    header {
+        display: flex;
+        justify-content: column-reverse;
+        
+    }
+
+    .container-1 {
+        display: flex;
+        justify-content: center;
+    }
+    
+
+    .container-1 .content-text-1 {
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
+    .logo {
+        display: none;
+    }
+}
+
+@media(max-width: 500px) {
+    .container {
+        width: 500px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+         
+    }
+
+    nav a {
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+
+}
